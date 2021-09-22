@@ -1,0 +1,42 @@
+$nav-black: #181818;
+$nav-font-color: #909096;
+
+
+$blue-color: #3D59D6;
+$grey-white-color: #FCFCFD;
+$blue-white-color: #F3F8FD;
+$baby-blue-color: #C9EDF9;
+$pink-white-color: #FCEAED;
+$black-color: #000;
+$grey-color: #A8ABAB;
+$white-color: #ffffff;
+$second-grey-color: #F0F3F3;
+$pink-orange-color: #FE7869;
+$black-grey-color: #333;
+$green-color: #2ccf76;
+$dark-blue: #28323C;
+$matte-black: #1C252E;
+$purple-color: #9A75FF;
+$orange-color: #FF8700;
+$lilac-color: #B548C6;
+$skyBlue-color: #32A7E2;
+
+// BREAKPOINTS
+
+$breakpoints: (small: 499px,
+    medium: 899px,
+    large: 999px,
+    extra-large: 1399px);
+
+@mixin breakpoint($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (max-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+
+
+
+
